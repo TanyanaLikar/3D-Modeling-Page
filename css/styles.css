@@ -1,7 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
-
+.link {
+  text-decoration: none;
+}
 .modeling-work__item {
   display: flex;
   align-items: center;
@@ -15,4 +37,74 @@
   margin-right: 10px;
   background: #487996;
   border-radius: 3px 0px;
+}
+
+.modeling__btn {
+  height: 56px;
+  width: 280px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-color);
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+}
+.modeling__container {
+  min-height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* -- Create model -- */
+/* .modeling-foto__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+.modeling-foto__item {
+  width: calc((100% - 32px) / 2);
+  margin-left: 16px;
+  margin-top: 16px;
+}
+.modeling-section{
+  padding-bottom: 50px;
+}
+.modeling-work {
+  position: relative;
+}
+.modeling-work::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 280px;
+  height: 164px;
+  background-image: url(../images/3d-modeling/pic/pic-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: ri;
+} */
+
+.modeling-work {
+  min-height: 100vh;
+  position: relative;
+}
+.box {
+  position: absolute;
+
+  background-image: url(../images/3d-modeling/pic/pic-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 164px;
+  top: 20px;
+  right: 0;
+  z-index: 2;
 }
